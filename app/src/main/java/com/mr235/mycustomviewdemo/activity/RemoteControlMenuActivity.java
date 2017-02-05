@@ -1,9 +1,11 @@
-package com.mr235.mycustomviewdemo;
+package com.mr235.mycustomviewdemo.activity;
 
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.mr235.mycustomviewdemo.R;
 
 public class RemoteControlMenuActivity extends AppCompatActivity {
 

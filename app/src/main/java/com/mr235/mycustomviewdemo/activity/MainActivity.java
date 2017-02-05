@@ -1,11 +1,11 @@
-package com.mr235.mycustomviewdemo;
+package com.mr235.mycustomviewdemo.activity;
 
 import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.mr235.mycustomviewdemo.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.bt_first_custom_view).setOnClickListener(this);
         findViewById(R.id.bt_circle_menu).setOnClickListener(this);
+        findViewById(R.id.bt_pie_chart).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_circle_menu:
                 startActivity(new Intent(this, RemoteControlMenuActivity.class));
+                break;
+            case R.id.bt_pie_chart:
+                startActivity(new Intent(this, PieChartActivity.class));
                 break;
 
         }
